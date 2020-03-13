@@ -6,8 +6,8 @@ const searchFlights = async (origin, destination, direct) => {
 
 	const query = new URLSearchParams({
 		partner: 'picky',
-		flyFrom: 'PRG',
-		to: 'VLC',
+		flyFrom: origin,
+		to: destination,
 		dateFrom: dateFrom,
 		dateTo: dateTo,
 		v: 3

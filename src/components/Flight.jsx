@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { DateTime } from 'luxon';
 
 export default class Flight extends Component {
 	
   render() {
-    console.log(this.props);
     const { item } = this.props;
 
     return (
@@ -17,11 +15,11 @@ export default class Flight extends Component {
         
         <div className="flight__arrival">
           <h2>To: {item.cityTo}</h2>
-          <div>Airport: {item.flyFrom}</div>
+          <div>Airport: {item.flyTo}</div>
           <div>Arrival: {item.aTime}</div>
         </div>
 
-        <div className="flight__price">Price: {item.price}</div>
+        <div className="flight__price">Price: {item.price} €</div>
       </div>
     );
   }
