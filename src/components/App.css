@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.flight__item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	border-bottom: 1px solid gray;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+}
+
+.flight__departure,
+.flight__arrival {
+	width: 40%;
+}
+
+.flight__price {
+	width: 20%;
+}
+
+.flight__departure div,
+.flight__arrival div {
+	margin-bottom: 0.75rem;
+}
